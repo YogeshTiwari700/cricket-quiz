@@ -18,7 +18,7 @@ score: 4
 
 function play (question,answers) {
 var userAnswer=readlineSync.question(question);
-if (userAnswer===answers){
+if (userAnswer.toUpperCase()===answers){
 console.log(chalk.greenBright("you are right\n"))
 scores=scores+1
 }else{
